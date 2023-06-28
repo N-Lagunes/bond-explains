@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.image {
+  max-width: 100%; /* Para hacer la imagen responsiva */
+  height: auto; /* Para mantener la proporción de la imagen */
+  width: 100%; /* Ocupa todo el espacio disponible */
+  max-width: 1080px; /* No puede ser más grande que el tamaño original de la imagen */
+}
+
+.text {
+  color: #2C619F;
+  text-align: center;
+}
+
+/* Regla para aplicar estilos específicos a partir de una resolución de 750px de ancho */
+
+@media (min-height: 360px) {
+  .image {
+    width: 240px; /* Fija la imagen a su tamaño original */
+    height: 240px; /* Fija la altura de la imagen a su tamaño original */
+    max-width: none; /* Remueve la restricción de ancho máximo */
+  }
+}
+
+@media (min-width: 360px) {
+  .image {
+    width: 240px; /* Fija la imagen a su tamaño original */
+    height: 240px; /* Fija la altura de la imagen a su tamaño original */
+    max-width: none; /* Remueve la restricción de ancho máximo */
+  }
+}
