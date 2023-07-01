@@ -5,8 +5,8 @@ import Tutorials from "./components/Tutorials"
 
 function App() {
   return (
-    <div className="App">
-      <Header />  {/* Aquí es donde se incluye el Header */}
+    <div className="app__container">
+      <Header />
       <Routes>
         <Route path="/" element={ <Tutorials/> } />
         <Route path="about" element={ <About/> } />

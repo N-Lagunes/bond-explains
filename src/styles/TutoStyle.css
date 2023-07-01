@@ -1,38 +1,36 @@
+/* TutoStyle.css */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  .carousel {
-    width: 240px;
-    height: 300px;
-    margin: auto;
-  }
-  
-  .carousel-control-prev {
-    height: 300px;
-  }
-  .carousel-control-next {
-    height: 300px;
-  }
-  
-  .carousel .carousel-control-prev-icon {
-    visibility: hidden;
-  }
-  .carousel:hover .carousel-control-prev-icon {
-    visibility: visible;
-  }
-  
-  .carousel .carousel-control-next-icon {
-    visibility: hidden;
-  }
-  .carousel:hover .carousel-control-next-icon {
-    visibility: visible;
-  }
-  .react-player {
-    width: 240px !important;
-    height: 240px !important;
-    
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: -150px 5% 0px 5%;
+
+}
+
+.arrow {
+  cursor: pointer;
+  margin-bottom: 20px; /* Agregar un margen para separar la flecha del contenido */
+  margin-top: 30vh;
+  font-size: xx-large;
+  margin-left: -15px;
+  color: #173456;
+}
+
+.programming {
+  transition: max-height 0.5s ease-in-out, visibility 0.6s; /* Aumenta la duración para una transición más suave */
+  max-height: 640px; /* Ajustar este valor según el tamaño máximo esperado de tu contenido */
+  visibility: visible;
+  overflow: hidden; /* Esto es importante para asegurar que el contenido no se muestre cuando está colapsado */
+  margin-top: -30px;
+  padding-top: -30px;
+}
+
+.programming.collapsed {
+  max-height: 0;  
+  visibility: hidden;
+}
+
