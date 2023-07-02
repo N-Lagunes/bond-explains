@@ -1,5 +1,6 @@
 {
   "homepage": "http://N-Lagunes.github.io/bond-explains",
+  "name":"bond-explains",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
