@@ -1,15 +1,19 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-  }
-  .carousel {
-    width: 240px;
-    height: 300px;
-    margin: auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 240px;
+  height: 300px;
+}
+
+/* otras reglas del carrusel se mantienen igual */
+
   
   .carousel-control-prev {
     height: 300px;

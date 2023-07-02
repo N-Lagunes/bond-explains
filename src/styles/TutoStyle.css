@@ -1,36 +1,27 @@
-/* TutoStyle.css */
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* alinear contenido al inicio */
   align-items: center;
-  height: 50vh;
-  width: 100vw;
-  /* Arriba | Derecha | Abajo | Izquierda */
-  margin: -150px 5% 0px 5%;
-
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .arrow {
   cursor: pointer;
-  margin-bottom: 20px; /* Agregar un margen para separar la flecha del contenido */
-  margin-top: 30vh;
+  margin-bottom: 20px;
   font-size: xx-large;
-  margin-left: -15px;
   color: #173456;
 }
 
-.programming {
-  transition: max-height 0.5s ease-in-out, visibility 0.6s; /* Aumenta la duración para una transición más suave */
-  max-height: 640px; /* Ajustar este valor según el tamaño máximo esperado de tu contenido */
-  visibility: visible;
-  overflow: hidden; /* Esto es importante para asegurar que el contenido no se muestre cuando está colapsado */
-  margin-top: -30px;
-  padding-top: -30px;
+.programming, .projects {
+  transition: height 0.5s ease-in-out;
+  height: 0; /* contenido colapsado por defecto */
+  overflow: hidden;
 }
 
-.programming.collapsed {
-  max-height: 0;  
-  visibility: hidden;
+.programming:not(.collapsed), .projects:not(.collapsed) {
+  height: auto; /* contenido visible */
 }
-

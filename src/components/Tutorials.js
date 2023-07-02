@@ -1,27 +1,39 @@
-import React, { useState } from "react";
 import "../styles/TutoStyle.css"
-import Programming from "./Programming.js"
+import React, { useState } from 'react';
+import Programming from './Programming.js';
+import Projects from './Projects';
 
-//TODO: agregar más divs de tal manera que pueda tener como mínimo 2 secciones bien integradas
-const Tutorials = () => {
-  const [showProgramming, setShowProgramming] = useState(false);
 
-  const handleArrowClick = () => {
-    setShowProgramming(!showProgramming);
-  }
+const CollapsibleSection = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
+    <div>
+      <div className="arrow" onClick={handleToggle}>
+        {isOpen ? `▼${title}` : `▶ ${title}`}
+      </div>
+
+      {isOpen && children}
+    </div>
+  );
+};
+
+const Tutorials = () => {
+  return (
     <div className="container">
-      <div className="arrow" onClick={handleArrowClick}>
-        {showProgramming ? '▼ Get Started' : '▶ Get Started'}
-      </div>
-      
-      <div className={`programming ${showProgramming ? '' : 'collapsed'}`}>
+      <CollapsibleSection title="Guide Courses">
         <Programming />
-      </div>
+      </CollapsibleSection>
+
+      <CollapsibleSection title="Guide Projects">
+        <Projects />
+      </CollapsibleSection>
     </div>
   );
 };
 
 export default Tutorials;
-
