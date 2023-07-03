@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bond-explains/static/css/main.f76ed285.css",
-    "main.js": "/bond-explains/static/js/main.e7958626.js",
+    "main.js": "/bond-explains/static/js/main.75fb87c7.js",
     "static/js/787.853cffaa.chunk.js": "/bond-explains/static/js/787.853cffaa.chunk.js",
     "static/media/Working.jpg": "/bond-explains/static/media/Working.ef6175211c781598683e.jpg",
     "index.html": "/bond-explains/index.html",
     "main.f76ed285.css.map": "/bond-explains/static/css/main.f76ed285.css.map",
-    "main.e7958626.js.map": "/bond-explains/static/js/main.e7958626.js.map",
+    "main.75fb87c7.js.map": "/bond-explains/static/js/main.75fb87c7.js.map",
     "787.853cffaa.chunk.js.map": "/bond-explains/static/js/787.853cffaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f76ed285.css",
-    "static/js/main.e7958626.js"
+    "static/js/main.75fb87c7.js"
   ]
 }
